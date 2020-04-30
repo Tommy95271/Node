@@ -1,4 +1,4 @@
-// The function is inside counter.js.
+// There are multiple stuff, how can we export everything?
 var counter = function(arr) {
 	return `there are ${arr.length} elements in this array`;
 };
@@ -6,6 +6,9 @@ var counter = function(arr) {
 var adder = function(a, b) {
 	return a + b;
 };
-var pi = 3.142;
-// The way to export the counter is doing like below, you need to let module.exports the function
-module.exports = counter;
+var pi = 3.14;
+
+// Doing this way is ok, but troublesome
+module.exports.counter = counter;
+module.exports.adder = adder;
+module.exports.pi = pi;

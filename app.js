@@ -7,4 +7,4 @@ var readMe = fs.readFile('readMe.txt', 'utf-8', function(err, data) {
 	console.log(data);
 });
 
-console.log(readMe);
+console.log("I'm after readMe but I log first");

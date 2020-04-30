@@ -17,3 +17,5 @@ var tommy = new Person('tommy');
 var mary = new Person('mary');
 var laker = new Person('laker');
 var people = [ tommy, mary, laker ];
+
+people.forEach((person) => {});

@@ -16,4 +16,4 @@ util.inherits(Person, events.EventEmitter);
 var tommy = new Person('tommy');
 var mary = new Person('mary');
 var laker = new Person('laker');
-var arr = [ tommy, mary, laker ];
+var people = [ tommy, mary, laker ];

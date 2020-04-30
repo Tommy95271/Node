@@ -3,8 +3,5 @@ var fs = require('fs');
 
 // Asynchronous way needs the third argument, which is a callback function, the callback takes two arguments: error and data.
 var readMe = fs.readFile('readMe.txt', 'utf-8', function(err, data) {
-	// You can console.log data here, log it outside is unnecessary.
-	console.log(data);
+	fs.writeFile('writeMe.txt', data);
 });
-
-console.log("I'm after readMe but I log first");

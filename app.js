@@ -24,4 +24,6 @@ people.forEach((person) => {
 	});
 });
 
-tommy.emit('speak', 'hello');
+tommy.emit('speak', "'Hello'");
+mary.emit('speak', "'How are you?'");
+laker.emit('speak', "'Good morning!'");

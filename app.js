@@ -6,3 +6,5 @@ var readMe = fs.readFile('readMe.txt', 'utf-8', function(err, data) {
 	// You can console.log data here, log it outside is unnecessary.
 	console.log(data);
 });
+
+console.log(readMe);

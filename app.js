@@ -8,3 +8,6 @@ var myEmitter = new events.EventEmitter();
 myEmitter.on('event', function(msg) {
 	console.log(msg);
 });
+
+// emit the emitter with your event and the msg
+myEmitter.emit('event', 'this is a new file');

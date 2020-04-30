@@ -18,4 +18,8 @@ var mary = new Person('mary');
 var laker = new Person('laker');
 var people = [ tommy, mary, laker ];
 
-people.forEach((person) => {});
+people.forEach((person) => {
+	person.on('speak', (msg) => {
+		console.log(`${person.name} said: ${msg}`);
+	});
+});

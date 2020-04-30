@@ -23,3 +23,5 @@ people.forEach((person) => {
 		console.log(`${person.name} said: ${msg}`);
 	});
 });
+
+tommy.emit('speak', 'hello');

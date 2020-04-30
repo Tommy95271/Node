@@ -1,13 +1,15 @@
-// Or we can do this way, because anyway we need to export them, don't we?
-module.exports.counter = function(arr) {
+var counter = function(arr) {
 	return `there are ${arr.length} elements in this array`;
 };
 
-module.exports.adder = function(a, b) {
+var adder = function(a, b) {
 	return a + b;
 };
-module.exports.pi = 3.14;
+var pi = 3.14;
 
-// module.exports.counter = counter;
-// module.exports.adder = adder;
-// module.exports.pi = pi;
+// This way is a lot easier, the reason we can do this is because module.exports is an Object, so we can treat it like Object.
+module.exports = {
+	counter: counter,
+	adder: adder,
+	pi: pi
+};
